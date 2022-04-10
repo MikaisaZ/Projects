@@ -1,0 +1,16 @@
+#yml文件中使用缩进来表示层级，但是要注意，不要随便加空格，除非到了赋值的时候，比如下面的8081前面就可以放好多空格放着玩，但
+#这么脑残的事情不建议你做
+server:
+  tomcat:
+    uri-encoding: UTF-8
+mybatis:
+  mapper-locations: classpath:/*.xml
+  type-aliases-package: com.mikaisa.entity
+spring:
+  datasource:
+    password: hzj1101..
+    username: root
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  profiles:
+    active: dev
